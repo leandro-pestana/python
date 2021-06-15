@@ -1,6 +1,7 @@
 print("Jogo do Adivinha")
 
-numero_secreto = 41
+numero_secreto = 42
+
 
 chute_str = input("Digite um número")
 print("Você Digitou", chute_str)
