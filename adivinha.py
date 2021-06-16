@@ -13,6 +13,10 @@ for rodada in range(1, numero_de_tentativa + 1):
     maior = (chute > numero_secreto)
     menor = (chute < numero_secreto)
 
+    if(chute < 1 or chute > 100):
+        print("Digite um número entre 1 e 100!")
+        continue
+
     if(acertou):
         print("Você acertou, parabens!")
         break
