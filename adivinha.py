@@ -2,10 +2,9 @@ print("Jogo do Adivinha")
 
 numero_secreto = 42
 numero_de_tentativa = 3
-rodada = 1
 
-while(rodada <= numero_de_tentativa):
-    print("Tentativa", rodada, "de", numero_de_tentativa)
+for rodada in range(1, numero_de_tentativa + 1):
+    print("Tentativa {} de {}" .format(rodada, numero_de_tentativa))
     chute_str = input("Digite um número")
     print("Você Digitou", chute_str)
 
@@ -16,6 +15,7 @@ while(rodada <= numero_de_tentativa):
 
     if(acertou):
         print("Você acertou, parabens!")
+        break
     else:
         if(maior):
             print("Você errou, seu chute foi alto")
@@ -23,3 +23,5 @@ while(rodada <= numero_de_tentativa):
             print("Você errou, seu chute foi baixo")
 
     rodada = rodada + 1
+
+print("Fim do Jogo")
